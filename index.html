@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Nosso Casamento</title>
+  <meta name="description" content="Toda a informação sobre o nosso casamento: data, local, programa, dress code e lista de presentes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="#inicio" class="nav-logo" id="nav-logo"></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#detalhes">Detalhes</a></li>
+      <li><a href="#programa">Programa</a></li>
+      <li><a href="#dress-code">O que vestir</a></li>
+      <li><a href="#presentes">Presentes</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-inner reveal">
+      <p class="hero-eyebrow">Vamos casar</p>
+      <h1 class="hero-names" id="hero-names"></h1>
+      <div class="divider"><span>❦</span></div>
+      <p class="hero-date" id="hero-date"></p>
+      <p class="hero-place" id="hero-place"></p>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><span id="cd-dias">0</span><small>dias</small></div>
+        <div><span id="cd-horas">0</span><small>horas</small></div>
+        <div><span id="cd-min">0</span><small>minutos</small></div>
+        <div><span id="cd-seg">0</span><small>segundos</small></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#rsvp" class="btn btn-primary">Confirmar presença</a>
+        <button class="btn btn-ghost" id="add-calendar">Adicionar ao calendário</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="detalhes">
+      <h2 class="section-title reveal">Quando &amp; Onde</h2>
+      <p class="section-sub reveal" id="frase"></p>
+      <div class="cards">
+        <article class="card reveal" id="card-cerimonia"></article>
+        <article class="card reveal" id="card-festa"></article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="programa">
+      <h2 class="section-title reveal">Programa do dia</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section class="section" id="dress-code">
+      <h2 class="section-title reveal">O que vestir</h2>
+      <div class="dress reveal">
+        <h3 id="dress-titulo"></h3>
+        <p id="dress-texto"></p>
+        <div class="swatches" id="dress-cores"></div>
+        <p class="dress-avoid" id="dress-evitar"></p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="presentes">
+      <h2 class="section-title reveal">Lista de presentes</h2>
+      <div class="gifts reveal">
+        <p id="presentes-texto"></p>
+        <a class="btn btn-primary" id="amazon-link" target="_blank" rel="noopener">🎁 Ver a lista na Amazon</a>
+        <div class="iban" id="iban-box">
+          <p id="iban-texto"></p>
+          <div class="iban-row">
+            <code id="iban"></code>
+            <button class="btn btn-small" id="copy-iban">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rsvp">
+      <h2 class="section-title reveal">Confirma a tua presença</h2>
+      <div class="rsvp reveal">
+        <p id="rsvp-prazo"></p>
+        <div class="rsvp-actions">
+          <a class="btn btn-primary" id="rsvp-form" target="_blank" rel="noopener">Responder ao convite</a>
+          <a class="btn btn-ghost" id="rsvp-email">Enviar email</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <h2 class="section-title reveal">Perguntas frequentes</h2>
+      <div class="faq" id="faq-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-names" id="footer-names"></p>
+    <p>Mal podemos esperar para celebrar convosco ♡</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
