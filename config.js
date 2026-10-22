@@ -7,27 +7,27 @@
 const CASAMENTO = {
   // Nomes do casal
   nome1: "Inês",
-  nome2: "Nome",
+  nome2: "Pedro",
 
   // Data e hora da cerimónia (formato: AAAA-MM-DDTHH:MM, hora de Portugal)
-  dataHora: "2027-06-12T16:00",
+  dataHora: "2027-06-05T15:00",
   // Hora prevista de fim (usada no "Adicionar ao calendário")
-  dataHoraFim: "2027-06-13T02:00",
+  dataHoraFim: "2027-06-06T02:00",
 
   frase: "Vamos casar! E queremos muito que estejas connosco.",
 
   cerimonia: {
-    nome: "Igreja de Exemplo",
-    hora: "16:00",
-    morada: "Rua Exemplo, 123, 1000-000 Lisboa",
-    mapa: "https://maps.google.com/?q=Lisboa",
+    nome: "Capela da Universidade",
+    hora: "15:00",
+    morada: "Rua Exemplo, 123, 1000-000 Coimbra",
+    mapa: "https://maps.google.com/?q=Coimbra",
   },
 
   festa: {
-    nome: "Quinta de Exemplo",
+    nome: "Quinta de Fmalicão",
     hora: "18:30",
-    morada: "Estrada Exemplo, 45, 2000-000 Sintra",
-    mapa: "https://maps.google.com/?q=Sintra",
+    morada: "Estrada Exemplo, 45, 2000-000 Anadia",
+    mapa: "https://maps.google.com/?q=Anadia",
   },
 
   // Programa do dia
