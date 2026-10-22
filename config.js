@@ -6,8 +6,8 @@
 
 const CASAMENTO = {
   // Nomes do casal
-  nome1: "Inês",
-  nome2: "Pedro",
+  nome1: "Pedro",
+  nome2: "Inês",
 
   // Data e hora da cerimónia (formato: AAAA-MM-DDTHH:MM, hora de Portugal)
   dataHora: "2027-06-05T15:00",
