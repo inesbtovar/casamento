@@ -19,23 +19,23 @@ const CASAMENTO = {
   cerimonia: {
     nome: "Capela da Universidade",
     hora: "15:00",
-    morada: "Rua Exemplo, 123, 1000-000 Coimbra",
-    mapa: "https://maps.google.com/?q=Coimbra",
+    morada: "R. Dr. Guilherme Moreira 10, 3000-210 Coimbra",
+    mapa: "https://www.google.com/maps/place/Capela+Universit%C3%A1ria+de+S%C3%A3o+Miguel/@40.2074163,-8.4290269,17z/data=!3m2!4b1!5s0xd22f909b139916f:0x4311d3f35f146ca6!4m6!3m5!1s0xd22f909b4794891:0x4235c0fc62ea0902!8m2!3d40.2074163!4d-8.426452!16s%2Fm%2F02r7p4j?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D",
   },
 
   festa: {
-    nome: "Quinta de Fmalicão",
-    hora: "18:30",
-    morada: "Estrada Exemplo, 45, 2000-000 Anadia",
-    mapa: "https://maps.google.com/?q=Anadia",
+    nome: "Palácio Condes de Foz d'Arouce",
+    hora: "17:00",
+    morada: "R. Chafariz 6, 3780-292 Anadia",
+    mapa: "https://www.google.com/maps/place/Pal%C3%A1cio+Condes+de+Foz+d'Arouce/@40.4547943,-8.4485561,88m/data=!3m1!1e3!4m6!3m5!1s0xd2307af01f0cc79:0xb2b85e7b98342b24!8m2!3d40.4548003!4d-8.4486517!16s%2Fg%2F11c60mbymg?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D",
   },
 
   // Programa do dia
   programa: [
-    { hora: "15:30", titulo: "Chegada dos convidados", texto: "Recebemos-vos à porta da igreja." },
-    { hora: "16:00", titulo: "Cerimónia", texto: "O momento do sim." },
-    { hora: "18:30", titulo: "Cocktail", texto: "Brinde e petiscos nos jardins da quinta." },
-    { hora: "20:30", titulo: "Jantar", texto: "Sentem-se, comam e celebrem connosco." },
+    { hora: "14:30", titulo: "Chegada dos convidados", texto: "Recebemos-vos à porta da igreja." },
+    { hora: "15:00", titulo: "Cerimónia", texto: "O momento do sim." },
+    { hora: "17:00", titulo: "Cocktail", texto: "Brinde e petiscos nos jardins da quinta." },
+    { hora: "20:00", titulo: "Jantar", texto: "Sentem-se, comam e celebrem connosco." },
     { hora: "23:00", titulo: "Bolo & Festa", texto: "Pista de dança aberta até de madrugada." },
   ],
 
@@ -44,8 +44,6 @@ const CASAMENTO = {
     titulo: "Formal / Cocktail",
     texto:
       "Fatos e vestidos de cerimónia. A festa é ao ar livre e em relva, por isso sugerimos sapatos confortáveis (e um casaco leve para a noite).",
-    // Cores sugeridas (podes apagar a lista se não quiseres)
-    cores: ["#f4c7d4", "#c9dcf0", "#e3d4ef", "#fbe1d3"],
     evitar: "Por favor, evita o branco — fica reservado para os noivos.",
   },
 
