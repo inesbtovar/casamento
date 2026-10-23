@@ -45,7 +45,7 @@ const CASAMENTO = {
     texto:
       "Fatos e vestidos de cerimónia. A festa é ao ar livre e em relva, por isso sugerimos sapatos confortáveis (e um casaco leve para a noite).",
     // Cores sugeridas (podes apagar a lista se não quiseres)
-    cores: ["#8a9a7b", "#c9b18a", "#e8dcc8", "#6b5b4b"],
+    cores: ["#f4c7d4", "#c9dcf0", "#e3d4ef", "#fbe1d3"],
     evitar: "Por favor, evita o branco — fica reservado para os noivos.",
   },
 
@@ -55,7 +55,7 @@ const CASAMENTO = {
       "A vossa presença é o melhor presente! Mas se quiserem oferecer algo, criámos uma lista com coisas que nos fazem falta na nova casa.",
     amazon: "https://www.amazon.es/hz/wishlist/ls/2702WWDS5O83Y?ref_=wl_share",
     // Opcional: deixa em branco ("") para esconder
-    iban: "PT50 0000 0000 0000 0000 0000 0",
+    iban: "PT50 0018 0003 6066 1147 0204 1",
     ibanTexto: "Também podem contribuir para a nossa lua de mel por transferência:",
   },
 

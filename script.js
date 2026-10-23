@@ -22,15 +22,14 @@
   $("hero-place").textContent = C.festa.nome;
   $("frase").textContent = C.frase;
 
-  const cartao = (icone, titulo, local) => `
-    <div class="card-icon">${icone}</div>
+  const cartao = (titulo, local) => `
     <h3>${titulo}</h3>
     <p class="card-time">${escapeHtml(local.hora)}</p>
     <p class="card-place">${escapeHtml(local.nome)}</p>
     <p class="card-address">${escapeHtml(local.morada)}</p>
     <a class="btn btn-ghost" href="${escapeHtml(local.mapa)}" target="_blank" rel="noopener">Ver no mapa</a>`;
-  $("card-cerimonia").innerHTML = cartao("⛪", "Cerimónia", C.cerimonia);
-  $("card-festa").innerHTML = cartao("🥂", "Festa", C.festa);
+  $("card-cerimonia").innerHTML = cartao("Cerimónia", C.cerimonia);
+  $("card-festa").innerHTML = cartao("Festa", C.festa);
 
   $("timeline").innerHTML = C.programa
     .map((p) => `
@@ -76,7 +75,7 @@
     const diff = inicio - new Date();
     if (diff <= 0) {
       $("countdown").classList.add("done");
-      $("countdown").textContent = new Date() < fim ? "É hoje! 🎉" : "Obrigado por celebrarem connosco ♡";
+      $("countdown").textContent = new Date() < fim ? "É hoje!" : "Obrigado por celebrarem connosco";
       clearInterval(timer);
       return;
     }
@@ -124,7 +123,7 @@
   $("copy-iban").addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText(C.presentes.iban.replace(/\s/g, ""));
-      toast("IBAN copiado ✓");
+      toast("IBAN copiado");
     } catch {
       toast("Não foi possível copiar");
     }
