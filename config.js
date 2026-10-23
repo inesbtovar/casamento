@@ -53,7 +53,7 @@ const CASAMENTO = {
   presentes: {
     texto:
       "A vossa presença é o melhor presente! Mas se quiserem oferecer algo, criámos uma lista com coisas que nos fazem falta na nova casa.",
-    amazon: "https://www.amazon.es/hz/wishlist/ls/EXEMPLO",
+    amazon: "https://www.amazon.es/hz/wishlist/ls/2702WWDS5O83Y?ref_=wl_share",
     // Opcional: deixa em branco ("") para esconder
     iban: "PT50 0000 0000 0000 0000 0000 0",
     ibanTexto: "Também podem contribuir para a nossa lua de mel por transferência:",
