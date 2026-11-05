@@ -29,7 +29,7 @@
     <p class="card-address">${escapeHtml(local.morada)}</p>
     <a class="btn btn-ghost" href="${escapeHtml(local.mapa)}" target="_blank" rel="noopener">Ver no mapa</a>`;
   $("card-cerimonia").innerHTML = cartao("Cerimónia", C.cerimonia);
-  $("card-festa").innerHTML = cartao("Festa", C.festa);
+  $("card-festa").innerHTML = cartao("Copo de Água", C.festa);
 
   $("timeline").innerHTML = C.programa
     .map((p) => `
@@ -101,7 +101,7 @@
       `DTEND:${icsDate(fim)}`,
       `SUMMARY:Casamento ${C.nome1} & ${C.nome2}`,
       `LOCATION:${C.cerimonia.nome}\\, ${C.cerimonia.morada.replace(/,/g, "\\,")}`,
-      `DESCRIPTION:Cerimónia ${C.cerimonia.hora} – ${C.cerimonia.nome}\\nFesta ${C.festa.hora} – ${C.festa.nome}\\n${location.href.split("#")[0]}`,
+      `DESCRIPTION:Cerimónia ${C.cerimonia.hora} – ${C.cerimonia.nome}\\nCopo de Água ${C.festa.hora} – ${C.festa.nome}\\n${location.href.split("#")[0]}`,
       "END:VEVENT",
       "END:VCALENDAR",
     ].join("\r\n");
